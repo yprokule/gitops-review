@@ -1,0 +1,6 @@
+[allowlist]
+  description = "Mock data"
+  path = [
+    '''samples''',
+    '''delete''',
+  ]
