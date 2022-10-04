@@ -19,7 +19,7 @@ pipeline {
     }
     stage ('Apply resources') {
       when {
-        branch 'master'
+        branch 'main'
       }
       steps {
         //FIX-ME
@@ -30,7 +30,7 @@ pipeline {
     }
     stage ('Verify deleted templates') {
       when {
-        branch 'master'
+        branch 'main'
       }
       steps {
         sh '! oc get templates -n openshift | grep -q rails'
